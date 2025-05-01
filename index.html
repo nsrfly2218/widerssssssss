@@ -1,0 +1,826 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Widers - منصة إدارة وتسويق محادثات WhatsApp</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="animations.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Tajawal:wght@300;400;500;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <meta
+      name="description"
+      content="Widers - منصة متكاملة لإدارة وتسويق محادثات WhatsApp عبر API معتمد من Meta. حملات، روبوتات دردشة، وإدارة فرق."
+    />
+  </head>
+  <body>
+    <!-- القسم 1: الهيدر والتنقل -->
+    <header class="header">
+      <div class="container">
+        <div class="navbar">
+          <div class="logo">
+            <h1>Widers</h1>
+          </div>
+          <nav class="nav-menu">
+            <ul>
+              <li><a href="#features">المميزات</a></li>
+              <li><a href="#advanced-features">المميزات المتقدمة</a></li>
+              <li><a href="#journey">كيف تبدأ</a></li>
+              <li><a href="#testimonials">عملاؤنا</a></li>
+              <li><a href="#pricing">الأسعار</a></li>
+              <li><a href="#faq">الأسئلة الشائعة</a></li>
+            </ul>
+          </nav>
+          <div class="cta-button">
+            <a href="#" class="btn btn-primary">تسجيل الدخول</a>
+          </div>
+          <div class="mobile-menu-toggle">
+            <i class="fas fa-bars"></i>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- القسم 2: البطاقة الرئيسية (Hero) -->
+    <section class="hero">
+      <div class="container">
+        <div class="hero-content">
+          <h1 class="main-title">
+            Widers هي منصتك الرسمية لإدارة وتسويق محادثات WhatsApp عبر API معتمد
+            من Meta.
+          </h1>
+          <p class="subtitle">
+            تقدم Widers حلولًا متقدمة تمكّنك من إرسال الحملات، بناء روبوتات
+            دردشة، وتنظيم المحادثات ضمن نظام موحد وقابل للتخصيص.
+          </p>
+          <div class="hero-buttons">
+            <a href="#" class="btn btn-primary">احجز عرضًا توضيحيًا</a>
+            <a href="#" class="btn btn-secondary">شاهد كيف تعمل المنصة</a>
+          </div>
+        </div>
+        <div class="hero-image">
+          <img
+            src="https://fastly.picsum.photos/id/0/5000/3333.jpg?hmac=_j6ghY5fCfSD6tvtcV74zXivkJSPIfR9B8w34XeQmvU"
+            alt="منصة Widers"
+            onload="this.classList.add('loaded')"
+          />
+        </div>
+      </div>
+    </section>
+
+    <!-- قسم الأرقام والإحصائيات -->
+    <section class="stats">
+      <div class="container">
+        <div class="stats-grid">
+          <div class="stat-card">
+            <div class="stat-number">
+              +500<span class="stat-unit">مليون</span>
+            </div>
+            <div class="stat-label">رسالة موثوقة تم إرسالها</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-number">+750</div>
+            <div class="stat-label">شركة سعودية تستخدم وايدرز</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-number">37<span class="stat-unit">%</span></div>
+            <div class="stat-label">متوسط عائد الحملة عبر المنصة</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- القسم 3: المميزات الرئيسية (Grid) -->
+    <section id="features" class="features">
+      <div class="container">
+        <div class="section-header">
+          <h2>أدوات متكاملة تدير التواصل وتُسرّع التفاعل</h2>
+        </div>
+        <div class="features-grid">
+          <div class="feature-card">
+            <div class="feature-icon">
+              <i class="far fa-comment-dots"></i>
+            </div>
+            <h3>حملات واتساب معتمدة</h3>
+            <p>أنشئ حملات تسويقية تستند إلى نماذج رسمية ومجدولة بدقة.</p>
+          </div>
+          <div class="feature-card">
+            <div class="feature-icon">
+              <i class="fas fa-robot"></i>
+            </div>
+            <h3>روبوتات دردشة مرنة</h3>
+            <p>أنشئ مسارات تفاعلية للردود التلقائية بدون أي برمجة.</p>
+          </div>
+          <div class="feature-card">
+            <div class="feature-icon">
+              <i class="fas fa-bolt"></i>
+            </div>
+            <h3>إدارة المحادثات والفرق</h3>
+            <p>
+              تنظيم المحادثات مع الردود السريعة وتحويلها تلقائيًا بين الموظفين.
+            </p>
+          </div>
+          <div class="feature-card">
+            <div class="feature-icon">
+              <i class="fas fa-plug"></i>
+            </div>
+            <h3>تكاملات جاهزة</h3>
+            <p>ربط مباشر مع منصات التجارة الإلكترونية وأنظمتك الداخلية.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- قسم الشركاء والتكاملات -->
+    <section class="partners">
+      <div class="container">
+        <div class="section-header">
+          <h2>شركاؤنا وتكاملاتنا</h2>
+          <p>نتكامل مع أفضل المنصات العالمية والمحلية لتجربة سلسة</p>
+        </div>
+        <div class="partners-logos">
+          <div class="partner-logo">
+            <img
+              src="https://cdn-icons-png.flaticon.com/256/6033/6033716.png"
+              alt="Meta"
+              onload="this.classList.add('loaded')"
+            />
+          </div>
+          <div class="partner-logo">
+            <img
+              src="https://yt3.googleusercontent.com/oqunUmQrCRFCNfG3Bo4kCk1lB0iQACLSXRAt5Ut1s8W48LC0u-3S611sbZ77NR5rg0tEp0pbnOI=s900-c-k-c0x00ffffff-no-rj"
+              alt="Shopify"
+              onload="this.classList.add('loaded')"
+            />
+          </div>
+          <div class="partner-logo">
+            <img
+              src="https://play-lh.googleusercontent.com/aPsA6vS25mrocOJqZhTZyxm7sntS_IZuHh4oLBI6v-70A_mLV0Fe0spqSDTbK_Fy8As"
+              alt="WooCommerce"
+              onload="this.classList.add('loaded')"
+            />
+          </div>
+          <div class="partner-logo">
+            <img
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSoBJN6zXtkqGUwWJ7fqET01BPu40t4tTrOxg&s"
+              alt="Zoho"
+              onload="this.classList.add('loaded')"
+            />
+          </div>
+          <div class="partner-logo">
+            <img
+              src="https://avatars.githubusercontent.com/u/44970666?s=280&v=4"
+              alt="Salla"
+              onload="this.classList.add('loaded')"
+            />
+          </div>
+          <div class="partner-logo">
+            <img
+              src="https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/ed/ce/bb/edcebbd6-1bcf-f912-69eb-06663a1a4ddb/AppIcon-0-0-1x_U007emarketing-0-10-0-85-220.png/256x256bb.jpg"
+              alt="Zid"
+              onload="this.classList.add('loaded')"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- القسم 5: رحلة العميل -->
+    <section id="journey" class="journey">
+      <div class="container">
+        <div class="section-header">
+          <h2>كيف تبدأ مع Widers في 3 خطوات</h2>
+        </div>
+        <div class="journey-steps">
+          <div class="step-card">
+            <div class="step-number">1</div>
+            <div class="step-icon">
+              <i class="fas fa-user-plus"></i>
+            </div>
+            <h3>التسجيل وتفعيل الرقم</h3>
+            <p>
+              أنشئ حسابك وفعّل رقم WhatsApp Business الرسمي مباشرة من داخل
+              المنصة.
+            </p>
+          </div>
+          <div class="step-card">
+            <div class="step-number">2</div>
+            <div class="step-icon">
+              <i class="fas fa-cogs"></i>
+            </div>
+            <h3>إعداد حملاتك أو روبوتاتك</h3>
+            <p>
+              اختر ما يناسب نشاطك: حملة تسويقية أو روبوت دردشة، وابدأ ببنائها
+              بسهولة.
+            </p>
+          </div>
+          <div class="step-card">
+            <div class="step-number">3</div>
+            <div class="step-icon">
+              <i class="fas fa-chart-line"></i>
+            </div>
+            <h3>بدء التواصل وتحليل النتائج</h3>
+            <p>
+              ارسل الرسائل، تابع التفاعل، واحصل على تقارير دقيقة لأداء فريقك
+              ومحادثاتك.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- قسم الفيديو التوضيحي -->
+    <section id="demo-video" class="demo-video">
+      <div class="container">
+        <div class="section-header">
+          <h2>شاهد كيف تعمل وايدرز</h2>
+          <p>دليل سريع لأهم مميزات وإمكانيات المنصة</p>
+        </div>
+        <div class="video-container">
+          <iframe
+            src="https://www.youtube.com/embed/SoS89PzFYzo"
+            title="شرح لمنصة وايدرز"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen
+          >
+          </iframe>
+        </div>
+      </div>
+    </section>
+
+    <!-- قسم لمن هذه المنصة -->
+    <section id="for-who" class="for-who">
+      <div class="container">
+        <div class="section-header">
+          <h2>لمن هذه المنصة؟</h2>
+          <p>
+            وايدرز تخدم كل من يتواصل مع عملاءه — من المتاجر، إلى فرق الدعم
+            والتسويق، وحتى المطورين. إليك كيف يستفيد كل منهم:
+          </p>
+        </div>
+        <div class="audience-grid">
+          <div class="audience-card">
+            <div class="audience-icon">
+              <i class="fas fa-store"></i>
+            </div>
+            <h3>أصحاب الأعمال</h3>
+            <p>تواصل مباشر يرفع المبيعات ويقرب العملاء — من واتساب.</p>
+            <ul class="audience-features">
+              <li>
+                <i class="fas fa-check-circle"></i> حملات ترويجية ذكية برسائل
+                رسمية
+              </li>
+              <li>
+                <i class="fas fa-check-circle"></i> روبوتات سلة متروكة وتنبيهات
+                تلقائية
+              </li>
+              <li>
+                <i class="fas fa-check-circle"></i> دعم سريع من لوحة موحدة
+              </li>
+            </ul>
+          </div>
+          <div class="audience-card">
+            <div class="audience-icon">
+              <i class="fas fa-bullhorn"></i>
+            </div>
+            <h3>فرق التسويق</h3>
+            <p>أطلق حملاتك بذكاء، وتتبع كل نقرة ورد وتفاعل بسهولة.</p>
+            <ul class="audience-features">
+              <li>
+                <i class="fas fa-check-circle"></i> إرسال حملات WhatsApp مع
+                استهداف دقيق
+              </li>
+              <li>
+                <i class="fas fa-check-circle"></i> تقارير فورية عن التفاعل
+                والتحويل
+              </li>
+              <li>
+                <i class="fas fa-check-circle"></i> تصنيفات سلوكية لعملائك
+                تلقائيًا
+              </li>
+            </ul>
+          </div>
+          <div class="audience-card">
+            <div class="audience-icon">
+              <i class="fas fa-headset"></i>
+            </div>
+            <h3>فرق الدعم</h3>
+            <p>واجهة واحدة تدير كل المحادثات، وتُسهّل على فريقك الرد بمرونة.</p>
+            <ul class="audience-features">
+              <li>
+                <i class="fas fa-check-circle"></i> توزيع تلقائي للمحادثات
+              </li>
+              <li>
+                <i class="fas fa-check-circle"></i> صلاحيات وتعليقات لكل موظف
+              </li>
+              <li>
+                <i class="fas fa-check-circle"></i> ردود جاهزة وملاحظات لكل عميل
+              </li>
+            </ul>
+          </div>
+          <div class="audience-card">
+            <div class="audience-icon">
+              <i class="fas fa-code"></i>
+            </div>
+            <h3>المطورين</h3>
+            <p>تكامل مرن، وربط سريع مع أنظمتك الداخلية والمتاجر.</p>
+            <ul class="audience-features">
+              <li><i class="fas fa-check-circle"></i> Webhooks لأي حدث</li>
+              <li><i class="fas fa-check-circle"></i> Open API لتخصيص كامل</li>
+              <li>
+                <i class="fas fa-check-circle"></i> توثيق واضح وتكامل مع ERP/CRM
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- قسم تطبيق الجوال -->
+    <section id="mobile-app" class="mobile-app">
+      <div class="container">
+        <div class="mobile-app-content">
+          <div class="mobile-app-text">
+            <h2>تطبيق الدردشة في جيبك</h2>
+            <p>
+              استخدم تطبيق وايدرز للرد على محادثات عملاءك، توزيع المهام، وتلقي
+              الإشعارات من أي مكان.
+            </p>
+            <div class="app-buttons">
+              <a href="#" class="app-button">
+                <i class="fab fa-google-play"></i>
+                <span>تنزيل على<strong>أندرويد</strong></span>
+              </a>
+              <a href="#" class="app-button">
+                <i class="fab fa-apple"></i>
+                <span>تنزيل على<strong>آيفون</strong></span>
+              </a>
+            </div>
+          </div>
+          <div class="mobile-app-image">
+            <img
+              src="https://www.livechat.com/app/livechat-for-iphone/livechat-for-iphone_hud1e4c068775391a8c1fdec767686bbd1_205450_900x0_resize_q75_h2_catmullrom_3.2ebe16c89ba88125541c4235691bfd8bb0f80eb36194cb19593e3142e29e72ae.webp"
+              alt="تطبيق وايدرز على الجوال"
+              onload="this.classList.add('loaded')"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- القسم 4: المميزات المتقدمة (صور + نص) -->
+    <section id="advanced-features" class="advanced-features">
+      <div class="container">
+        <!-- الميزة الأولى -->
+        <div class="feature-block">
+          <div class="feature-content">
+            <h2>أطلق حملات واتساب مدروسة وتابع النتائج بدقة</h2>
+            <p>
+              أنشئ حملات تستند إلى نماذج رسمية، حدّد التوقيت والجمهور، وتتبع
+              الأداء من خلال لوحة تحكم واحدة.
+            </p>
+            <ul class="feature-list">
+              <li><i class="fas fa-check"></i> إرسال يدوي أو مجدول.</li>
+              <li>
+                <i class="fas fa-check"></i> تتبع الرسائل المفتوحة والنقرات.
+              </li>
+              <li>
+                <i class="fas fa-check"></i> استهداف العملاء المهتمين تلقائيًا.
+              </li>
+            </ul>
+          </div>
+          <div class="feature-image">
+            <img
+              src="https://fastly.picsum.photos/id/0/5000/3333.jpg?hmac=_j6ghY5fCfSD6tvtcV74zXivkJSPIfR9B8w34XeQmvU"
+              alt="حملات واتساب"
+              onload="this.classList.add('loaded')"
+            />
+          </div>
+        </div>
+        <!-- الميزة الثانية -->
+        <div class="feature-block reverse">
+          <div class="feature-content">
+            <h2>ردود آلية مخصصة لكل تفاعل</h2>
+            <p>
+              صمّم سيناريوهات دردشة بدون برمجة، وحدد كيف يتفاعل الروبوت مع كلمات
+              مفتاحية أو حالات العملاء المختلفة.
+            </p>
+            <ul class="feature-list">
+              <li><i class="fas fa-check"></i> واجهة عربية مبسطة.</li>
+              <li><i class="fas fa-check"></i> دعم وسوم وتصنيفات العملاء.</li>
+              <li><i class="fas fa-check"></i> تشغيل تلقائي حسب الحدث.</li>
+            </ul>
+          </div>
+          <div class="feature-image">
+            <img
+              src="https://fastly.picsum.photos/id/0/5000/3333.jpg?hmac=_j6ghY5fCfSD6tvtcV74zXivkJSPIfR9B8w34XeQmvU"
+              alt="روبوت المحادثة الذكي"
+              onload="this.classList.add('loaded')"
+            />
+          </div>
+        </div>
+        <!-- الميزة الثالثة -->
+        <div class="feature-block">
+          <div class="feature-content">
+            <h2>سرعة، تنظيم، وتعاون داخل المحادثة</h2>
+            <p>
+              حوّل المحادثات إلى تجربة منظمة مع الردود السريعة، تحويل تلقائي بين
+              الموظفين، وتعليقات داخلية.
+            </p>
+            <ul class="feature-list">
+              <li><i class="fas fa-check"></i> واجهة موحدة لجميع المحادثات.</li>
+              <li>
+                <i class="fas fa-check"></i> صلاحيات مختلفة لكل عضو في الفريق.
+              </li>
+              <li><i class="fas fa-check"></i> سجل داخلي لكل تفاعل.</li>
+            </ul>
+          </div>
+          <div class="feature-image">
+            <img
+              src="https://fastly.picsum.photos/id/0/5000/3333.jpg?hmac=_j6ghY5fCfSD6tvtcV74zXivkJSPIfR9B8w34XeQmvU"
+              alt="إدارة المحادثات والفرق"
+              onload="this.classList.add('loaded')"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- القسم 6: شهادات العملاء (Social Proof) -->
+    <section id="testimonials" class="testimonials">
+      <div class="container">
+        <div class="section-header">
+          <h2>تجارب حقيقية من عملاء Widers</h2>
+        </div>
+        <div class="testimonials-slider">
+          <div class="testimonial-card">
+            <div class="quote">
+              <i class="fas fa-quote-right"></i>
+            </div>
+            <p class="testimonial-text">
+              "استخدمنا Widers في إدارة حملاتنا على واتساب وشفنا فرق كبير في
+              التفاعل. سهولة الاستخدام والدعم العربي خلونا نتحرك أسرع من قبل."
+            </p>
+            <div class="testimonial-author">متجر إلكتروني سعودي</div>
+          </div>
+          <div class="testimonial-card">
+            <div class="quote">
+              <i class="fas fa-quote-right"></i>
+            </div>
+            <p class="testimonial-text">
+              "الروبوتات والردود السريعة وفرت وقت كبير على الفريق. صار العميل
+              ياخذ الخدمة بدون ما ينتظر ممثل."
+            </p>
+            <div class="testimonial-author">شركة خدمات رقمية</div>
+          </div>
+          <div class="testimonial-card">
+            <div class="quote">
+              <i class="fas fa-quote-right"></i>
+            </div>
+            <p class="testimonial-text">
+              "قبل Widers كان التواصل مع العملاء عشوائي ومتعب. الآن صار كل شيء
+              منظم ونقدر نتابع كل محادثة بسهولة."
+            </p>
+            <div class="testimonial-author">مطعم ومتجر مأكولات</div>
+          </div>
+        </div>
+        <div class="testimonial-dots">
+          <span class="dot active"></span>
+          <span class="dot"></span>
+          <span class="dot"></span>
+        </div>
+      </div>
+    </section>
+
+    <!-- القسم 7: الخطط والأسعار -->
+    <section id="pricing" class="pricing">
+      <div class="container">
+        <div class="section-header">
+          <h2>اختر الخطة المناسبة لحجم عملك</h2>
+        </div>
+
+        <div class="pricing-toggle">
+          <span class="toggle-label active">شهري</span>
+          <label class="switch">
+            <input type="checkbox" id="pricing-toggle" />
+            <span class="slider round"></span>
+          </label>
+          <span class="toggle-label">سنوي</span>
+          <span class="save-label">وفر 20%</span>
+        </div>
+
+        <div class="pricing-plans monthly active">
+          <div class="pricing-card">
+            <div class="plan-name">الأعمال</div>
+            <div class="plan-price">
+              <span class="price">299</span>
+              <span class="currency">ريال</span>
+              <span class="period">/ شهر</span>
+            </div>
+            <div class="plan-audience">مناسبة للمتاجر الصغيرة والمستقلة</div>
+            <ul class="plan-features">
+              <li><i class="fas fa-check"></i> الحملات التسويقية</li>
+              <li><i class="fas fa-check"></i> الردود التلقائية</li>
+              <li><i class="fas fa-check"></i> روبوت دردشة بسيط</li>
+              <li><i class="fas fa-check"></i> دعم فني عبر البريد</li>
+            </ul>
+            <a href="#" class="btn btn-outline">اشترك الآن</a>
+          </div>
+          <div class="pricing-card popular">
+            <div class="popular-badge">الأكثر اختيارًا</div>
+            <div class="plan-name">الأعمال برو</div>
+            <div class="plan-price">
+              <span class="price">499</span>
+              <span class="currency">ريال</span>
+              <span class="period">/ شهر</span>
+            </div>
+            <div class="plan-audience">مناسبة للشركات الناشئة والفرق</div>
+            <ul class="plan-features">
+              <li><i class="fas fa-check"></i> كل مزايا باقة الأعمال</li>
+              <li><i class="fas fa-check"></i> صلاحيات الفرق</li>
+              <li><i class="fas fa-check"></i> تحليلات موسعة</li>
+              <li><i class="fas fa-check"></i> دعم فني عبر الواتساب</li>
+            </ul>
+            <a href="#" class="btn btn-primary">اشترك الآن</a>
+          </div>
+          <div class="pricing-card">
+            <div class="plan-name">الاحترافية</div>
+            <div class="plan-price">
+              <span class="price">699</span>
+              <span class="currency">ريال</span>
+              <span class="period">/ شهر</span>
+            </div>
+            <div class="plan-audience">مناسبة للمؤسسات أو الوكلاء</div>
+            <ul class="plan-features">
+              <li><i class="fas fa-check"></i> كل المزايا السابقة</li>
+              <li><i class="fas fa-check"></i> وصول كامل للـ API</li>
+              <li><i class="fas fa-check"></i> تكاملات متقدمة</li>
+              <li><i class="fas fa-check"></i> مدير حساب مخصص</li>
+            </ul>
+            <a href="#" class="btn btn-outline">اشترك الآن</a>
+          </div>
+        </div>
+
+        <div class="pricing-plans yearly">
+          <div class="pricing-card">
+            <div class="plan-name">الأعمال</div>
+            <div class="plan-price">
+              <span class="price">2,990</span>
+              <span class="currency">ريال</span>
+              <span class="period">/ سنة</span>
+            </div>
+            <div class="plan-savings">توفير 598 ريال</div>
+            <div class="plan-audience">مناسبة للمتاجر الصغيرة والمستقلة</div>
+            <ul class="plan-features">
+              <li><i class="fas fa-check"></i> الحملات التسويقية</li>
+              <li><i class="fas fa-check"></i> الردود التلقائية</li>
+              <li><i class="fas fa-check"></i> روبوت دردشة بسيط</li>
+              <li><i class="fas fa-check"></i> دعم فني عبر البريد</li>
+            </ul>
+            <a href="#" class="btn btn-outline">اشترك الآن</a>
+          </div>
+          <div class="pricing-card popular">
+            <div class="popular-badge">الأكثر اختيارًا</div>
+            <div class="plan-name">الأعمال برو</div>
+            <div class="plan-price">
+              <span class="price">4,990</span>
+              <span class="currency">ريال</span>
+              <span class="period">/ سنة</span>
+            </div>
+            <div class="plan-savings">توفير 998 ريال</div>
+            <div class="plan-audience">مناسبة للشركات الناشئة والفرق</div>
+            <ul class="plan-features">
+              <li><i class="fas fa-check"></i> كل مزايا باقة الأعمال</li>
+              <li><i class="fas fa-check"></i> صلاحيات الفرق</li>
+              <li><i class="fas fa-check"></i> تحليلات موسعة</li>
+              <li><i class="fas fa-check"></i> دعم فني عبر الواتساب</li>
+            </ul>
+            <a href="#" class="btn btn-primary">اشترك الآن</a>
+          </div>
+          <div class="pricing-card">
+            <div class="plan-name">الاحترافية</div>
+            <div class="plan-price">
+              <span class="price">6,990</span>
+              <span class="currency">ريال</span>
+              <span class="period">/ سنة</span>
+            </div>
+            <div class="plan-savings">توفير 1,398 ريال</div>
+            <div class="plan-audience">مناسبة للمؤسسات أو الوكلاء</div>
+            <ul class="plan-features">
+              <li><i class="fas fa-check"></i> كل المزايا السابقة</li>
+              <li><i class="fas fa-check"></i> وصول كامل للـ API</li>
+              <li><i class="fas fa-check"></i> تكاملات متقدمة</li>
+              <li><i class="fas fa-check"></i> مدير حساب مخصص</li>
+            </ul>
+            <a href="#" class="btn btn-outline">اشترك الآن</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- القسم 8: الأسئلة الشائعة -->
+    <section id="faq" class="faq">
+      <div class="container">
+        <div class="section-header">
+          <h2>أسئلة يطرحها عملاؤنا دائمًا</h2>
+        </div>
+        <div class="faq-container">
+          <div class="faq-item">
+            <div class="faq-question">
+              <h3>هل أحتاج إلى رقم واتساب جديد؟</h3>
+              <div class="faq-icon">
+                <i class="fas fa-chevron-down"></i>
+              </div>
+            </div>
+            <div class="faq-answer">
+              <p>
+                لا. يمكنك ربط رقمك التجاري الحالي بعد التحقق من Meta داخل
+                المنصة.
+              </p>
+            </div>
+          </div>
+          <div class="faq-item">
+            <div class="faq-question">
+              <h3>هل Widers منصة رسمية؟</h3>
+              <div class="faq-icon">
+                <i class="fas fa-chevron-down"></i>
+              </div>
+            </div>
+            <div class="faq-answer">
+              <p>
+                نعم. وايدرز هي مزود خدمة رسمي لـ WhatsApp Business API معتمد من
+                Meta.
+              </p>
+            </div>
+          </div>
+          <div class="faq-item">
+            <div class="faq-question">
+              <h3>كم يستغرق التفعيل؟</h3>
+              <div class="faq-icon">
+                <i class="fas fa-chevron-down"></i>
+              </div>
+            </div>
+            <div class="faq-answer">
+              <p>عادة خلال 24 إلى 48 ساعة من تقديم الطلب وإكمال المتطلبات.</p>
+            </div>
+          </div>
+          <div class="faq-item">
+            <div class="faq-question">
+              <h3>هل المنصة تدعم اللغة العربية؟</h3>
+              <div class="faq-icon">
+                <i class="fas fa-chevron-down"></i>
+              </div>
+            </div>
+            <div class="faq-answer">
+              <p>
+                نعم بالكامل — الواجهة، المحتوى، الدعم الفني، وحتى الروبوتات.
+              </p>
+            </div>
+          </div>
+          <div class="faq-item">
+            <div class="faq-question">
+              <h3>هل يمكنني استخدام المنصة بدون مبرمج؟</h3>
+              <div class="faq-icon">
+                <i class="fas fa-chevron-down"></i>
+              </div>
+            </div>
+            <div class="faq-answer">
+              <p>نعم. كل الأدوات مبنية بواجهة مرئية سهلة، بدون أكواد.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- القسم 9: مقارنة Widers بالحلول الأخرى -->
+    <section class="comparison">
+      <div class="container">
+        <div class="section-header">
+          <h2>لماذا تختار Widers؟</h2>
+        </div>
+        <div class="comparison-table-wrapper">
+          <table class="comparison-table">
+            <thead>
+              <tr>
+                <th>الميزة</th>
+                <th>Widers <span class="check">✅</span></th>
+                <th>أدوات رسمية عامة</th>
+                <th>أدوات غير معتمدة <span class="cross">❌</span></th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>مزود خدمة رسمي من Meta</td>
+                <td><i class="fas fa-check"></i></td>
+                <td><i class="fas fa-check"></i></td>
+                <td><i class="fas fa-times"></i></td>
+              </tr>
+              <tr>
+                <td>واجهة عربية بالكامل</td>
+                <td><i class="fas fa-check"></i></td>
+                <td><i class="fas fa-times"></i></td>
+                <td><i class="fas fa-times"></i></td>
+              </tr>
+              <tr>
+                <td>حملات واتساب معتمدة وجاهزة</td>
+                <td><i class="fas fa-check"></i></td>
+                <td><i class="fas fa-times"></i></td>
+                <td><i class="fas fa-times"></i></td>
+              </tr>
+              <tr>
+                <td>روبوت دردشة بدون كود</td>
+                <td><i class="fas fa-check"></i></td>
+                <td>جزئيًا</td>
+                <td><i class="fas fa-times"></i></td>
+              </tr>
+              <tr>
+                <td>دعم مباشر وسريع</td>
+                <td><i class="fas fa-check"></i></td>
+                <td><i class="fas fa-times"></i></td>
+                <td><i class="fas fa-times"></i></td>
+              </tr>
+              <tr>
+                <td>تكامل مع المتاجر (سلة/زد…)</td>
+                <td><i class="fas fa-check"></i></td>
+                <td><i class="fas fa-times"></i></td>
+                <td><i class="fas fa-times"></i></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <!-- القسم 10: الدعوة الأخيرة -->
+    <section class="final-cta">
+      <div class="container">
+        <div class="cta-content">
+          <h2>جاهز لنقل تواصلك إلى مستوى مختلف؟</h2>
+          <p>
+            ابدأ رحلتك مع Widers اليوم، وفعّل أدواتك التسويقية والتشغيلية على
+            WhatsApp ضمن نظام رسمي وموثوق.
+          </p>
+          <div class="cta-buttons">
+            <a href="#" class="btn btn-primary">ابدأ الآن</a>
+            <a href="#" class="btn btn-secondary">احجز جلسة تعريفية</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- الفوتر -->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-logo">
+            <h2>Widers</h2>
+            <p>منصتك لإدارة محادثات WhatsApp</p>
+          </div>
+          <div class="footer-links">
+            <div class="footer-column">
+              <h3>روابط سريعة</h3>
+              <ul>
+                <li><a href="#features">المميزات</a></li>
+                <li><a href="#pricing">الأسعار</a></li>
+                <li><a href="#testimonials">آراء العملاء</a></li>
+                <li><a href="#faq">الأسئلة الشائعة</a></li>
+              </ul>
+            </div>
+            <div class="footer-column">
+              <h3>الدعم</h3>
+              <ul>
+                <li><a href="#">مركز المساعدة</a></li>
+                <li><a href="#">التوثيق</a></li>
+                <li><a href="#">اتصل بنا</a></li>
+                <li><a href="#">سياسة الخصوصية</a></li>
+              </ul>
+            </div>
+            <div class="footer-column">
+              <h3>تواصل معنا</h3>
+              <div class="social-links">
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-facebook"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-linkedin"></i></a>
+              </div>
+              <p>support@widers.com</p>
+              <p>+966 55 123 4567</p>
+            </div>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>© 2023 Widers. جميع الحقوق محفوظة</p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>

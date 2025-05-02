@@ -210,8 +210,8 @@ img {
   padding: 15rem 0 10rem;
   background: linear-gradient(
     to bottom left,
-    rgba(86, 30, 220, 0.15),
-    rgba(130, 87, 229, 0.08)
+    rgba(16, 76, 186, 0.1),
+    rgba(97, 128, 213, 0.05)
   );
   overflow: hidden;
 }

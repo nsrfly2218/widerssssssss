@@ -1225,8 +1225,8 @@ img {
 /* Stats Section */
 .stats {
   padding: 5rem 0;
-  background-color: var(--primary-color);
-  color: var(--secondary-color);
+  background-color: var(--secondary-color);
+  color: white;
 }
 
 .stats-grid {

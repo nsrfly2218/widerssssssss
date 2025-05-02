@@ -210,8 +210,8 @@ img {
   padding: 15rem 0 10rem;
   background: linear-gradient(
     to bottom left,
-    rgba(16, 76, 186, 0.1),
-     rgba(97, 128, 213, 0.05)
+    rgba(86, 30, 220, 0.15),
+    rgba(130, 87, 229, 0.08)
   );
   overflow: hidden;
 }
@@ -1225,8 +1225,8 @@ img {
 /* Stats Section */
 .stats {
   padding: 5rem 0;
-  background-color: var(--primary-color);
-  color: var(--secondary-color);
+  background-color: var(--secondary-color);
+  color: white;
 }
 
 .stats-grid {
@@ -1378,7 +1378,7 @@ img {
 }
 
 .audience-card-header {
-  height: 20rem;
+  height: 40rem;
   position: relative;
   overflow: hidden;
 }
@@ -1391,7 +1391,7 @@ img {
 }
 
 .audience-card:hover .audience-card-image {
-  transform: scale(1.05);
+  transform: scale(1.08);
 }
 
 .audience-card-overlay {
@@ -1471,6 +1471,10 @@ img {
     margin-left: auto;
     margin-right: auto;
   }
+
+  .audience-card-header {
+    height: 30rem;
+  }
 }
 
 @media (max-width: 768px) {
@@ -1483,13 +1487,13 @@ img {
   }
 
   .audience-card-header {
-    height: 15rem;
+    height: 22rem;
   }
 }
 
 @media (max-width: 576px) {
   .audience-card-header {
-    height: 12rem;
+    height: 20rem;
   }
 
   .audience-card-title {

@@ -39,6 +39,29 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   });
 
+  // Audience options accordion functionality
+  const audienceOptions = document.querySelectorAll(".audience-option");
+
+  audienceOptions.forEach((option) => {
+    const optionHeader = option.querySelector(".option-header");
+
+    optionHeader.addEventListener("click", () => {
+      // Toggle the active class on the clicked option
+      option.classList.toggle("active");
+
+      // Optional: Close other options when one is opened
+      // Uncomment the code below if you want only one option to be open at a time
+      /*
+      const parentOptions = option.parentElement.querySelectorAll('.audience-option');
+      parentOptions.forEach(otherOption => {
+        if (otherOption !== option) {
+          otherOption.classList.remove('active');
+        }
+      });
+      */
+    });
+  });
+
   // Pricing toggle functionality
   const pricingToggle = document.getElementById("pricing-toggle");
   const monthlyPlan = document.querySelector(".pricing-plans.monthly");

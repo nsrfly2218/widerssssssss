@@ -1,0 +1,696 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>الأسعار والباقات - Widers</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="animations.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Tajawal:wght@300;400;500;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <meta
+      name="description"
+      content="باقات وأسعار منصة Widers - منصة متكاملة لإدارة وتسويق محادثات WhatsApp عبر API معتمد من Meta."
+    />
+    <style>
+      .pricing-page-hero {
+        padding: 15rem 0 5rem;
+        background: linear-gradient(
+          to bottom left,
+          rgba(16, 76, 186, 0.1),
+          rgba(97, 128, 213, 0.05)
+        );
+      }
+
+      .pricing-features {
+        padding: 5rem 0;
+        background-color: #fff;
+      }
+
+      .pricing-features-list {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+        gap: 3rem;
+        margin-top: 3rem;
+      }
+
+      .feature-group {
+        background-color: #f8f9fa;
+        border-radius: 1.5rem;
+        padding: 3rem;
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+      }
+
+      .feature-group h3 {
+        color: var(--primary-color);
+        margin-bottom: 2rem;
+        position: relative;
+        padding-bottom: 1rem;
+      }
+
+      .feature-group h3::after {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        width: 5rem;
+        height: 0.3rem;
+        background-color: var(--primary-color);
+      }
+
+      .feature-group ul li {
+        margin-bottom: 1.2rem;
+        display: flex;
+        align-items: flex-start;
+      }
+
+      .feature-group ul li i {
+        color: var(--secondary-color);
+        margin-left: 1rem;
+        margin-top: 0.3rem;
+      }
+
+      .enterprise-cta {
+        background: linear-gradient(
+          45deg,
+          var(--primary-color),
+          var(--primary-light)
+        );
+        color: white;
+        border-radius: 1.5rem;
+        padding: 4rem;
+        margin-top: 5rem;
+        text-align: center;
+        box-shadow: 0 10px 30px rgba(16, 76, 186, 0.2);
+      }
+
+      .enterprise-cta h3 {
+        font-size: 2.4rem;
+        margin-bottom: 1.5rem;
+      }
+
+      .enterprise-cta p {
+        font-size: 1.8rem;
+        margin-bottom: 2.5rem;
+        max-width: 70rem;
+        margin-left: auto;
+        margin-right: auto;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- القسم 1: الهيدر والتنقل -->
+    <header class="header">
+      <div class="container">
+        <div class="navbar">
+          <div class="logo">
+            <h1>Widers</h1>
+          </div>
+          <nav class="nav-menu">
+            <ul>
+              <li><a href="index.html#features">المميزات</a></li>
+              <li>
+                <a href="index.html#advanced-features">المميزات المتقدمة</a>
+              </li>
+              <li><a href="index.html#journey">كيف تبدأ</a></li>
+              <li><a href="index.html#testimonials">عملاؤنا</a></li>
+              <li><a href="index.html#pricing">الأسعار</a></li>
+              <li><a href="index.html#faq">الأسئلة الشائعة</a></li>
+            </ul>
+          </nav>
+          <div class="cta-button">
+            <a href="index.html" class="btn btn-primary">الصفحة الرئيسية</a>
+          </div>
+          <div class="mobile-menu-toggle">
+            <i class="fas fa-bars"></i>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- القسم 2: العنوان الرئيسي للصفحة -->
+    <section class="pricing-page-hero">
+      <div class="container">
+        <div class="section-header">
+          <h2>باقات وأسعار منصة Widers</h2>
+          <p>
+            اختر الباقة المناسبة لاحتياجات عملك وابدأ في تطوير تواصلك عبر
+            WhatsApp
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- قسم الأسعار -->
+    <section id="pricing" class="pricing">
+      <div class="container">
+        <div class="pricing-toggle">
+          <span class="toggle-label active">شهري</span>
+          <label class="switch">
+            <input type="checkbox" id="pricing-toggle" />
+            <span class="slider round"></span>
+          </label>
+          <span class="toggle-label">سنوي</span>
+          <span class="save-label">وفر 20%</span>
+        </div>
+
+        <div class="pricing-plans monthly active">
+          <div class="pricing-card">
+            <div class="plan-name">الأعمال</div>
+            <div class="plan-price">
+              <span class="price">299</span>
+              <span class="currency">ريال</span>
+              <span class="period">/ شهر</span>
+            </div>
+            <div class="plan-audience">مناسبة للمتاجر الصغيرة والمستقلة</div>
+            <ul class="plan-features">
+              <li><i class="fas fa-check"></i> الحملات التسويقية</li>
+              <li><i class="fas fa-check"></i> الردود التلقائية</li>
+              <li><i class="fas fa-check"></i> روبوت دردشة بسيط</li>
+              <li><i class="fas fa-check"></i> دعم فني عبر البريد</li>
+              <li><i class="fas fa-check"></i> 500 رسالة شهرية</li>
+              <li><i class="fas fa-check"></i> مستخدم واحد</li>
+            </ul>
+            <a href="booking.html" class="btn btn-outline"
+              >احجز عرضًا توضيحيًا</a
+            >
+          </div>
+          <div class="pricing-card popular">
+            <div class="popular-badge">الأكثر اختيارًا</div>
+            <div class="plan-name">الأعمال برو</div>
+            <div class="plan-price">
+              <span class="price">499</span>
+              <span class="currency">ريال</span>
+              <span class="period">/ شهر</span>
+            </div>
+            <div class="plan-audience">مناسبة للشركات الناشئة والفرق</div>
+            <ul class="plan-features">
+              <li><i class="fas fa-check"></i> كل مزايا باقة الأعمال</li>
+              <li><i class="fas fa-check"></i> صلاحيات الفرق</li>
+              <li><i class="fas fa-check"></i> تحليلات موسعة</li>
+              <li><i class="fas fa-check"></i> دعم فني عبر الواتساب</li>
+              <li><i class="fas fa-check"></i> 2000 رسالة شهرية</li>
+              <li><i class="fas fa-check"></i> 5 مستخدمين</li>
+            </ul>
+            <a href="booking.html" class="btn btn-primary"
+              >احجز عرضًا توضيحيًا</a
+            >
+          </div>
+          <div class="pricing-card">
+            <div class="plan-name">الاحترافية</div>
+            <div class="plan-price">
+              <span class="price">699</span>
+              <span class="currency">ريال</span>
+              <span class="period">/ شهر</span>
+            </div>
+            <div class="plan-audience">مناسبة للمؤسسات أو الوكلاء</div>
+            <ul class="plan-features">
+              <li><i class="fas fa-check"></i> كل المزايا السابقة</li>
+              <li><i class="fas fa-check"></i> وصول كامل للـ API</li>
+              <li><i class="fas fa-check"></i> تكاملات متقدمة</li>
+              <li><i class="fas fa-check"></i> مدير حساب مخصص</li>
+              <li><i class="fas fa-check"></i> 5000 رسالة شهرية</li>
+              <li><i class="fas fa-check"></i> 10 مستخدمين</li>
+            </ul>
+            <a href="booking.html" class="btn btn-outline"
+              >احجز عرضًا توضيحيًا</a
+            >
+          </div>
+        </div>
+
+        <div class="pricing-plans yearly">
+          <div class="pricing-card">
+            <div class="plan-name">الأعمال</div>
+            <div class="plan-price">
+              <span class="price">2,990</span>
+              <span class="currency">ريال</span>
+              <span class="period">/ سنة</span>
+            </div>
+            <div class="plan-savings">توفير 598 ريال</div>
+            <div class="plan-audience">مناسبة للمتاجر الصغيرة والمستقلة</div>
+            <ul class="plan-features">
+              <li><i class="fas fa-check"></i> الحملات التسويقية</li>
+              <li><i class="fas fa-check"></i> الردود التلقائية</li>
+              <li><i class="fas fa-check"></i> روبوت دردشة بسيط</li>
+              <li><i class="fas fa-check"></i> دعم فني عبر البريد</li>
+              <li><i class="fas fa-check"></i> 500 رسالة شهرية</li>
+              <li><i class="fas fa-check"></i> مستخدم واحد</li>
+            </ul>
+            <a href="booking.html" class="btn btn-outline"
+              >احجز عرضًا توضيحيًا</a
+            >
+          </div>
+          <div class="pricing-card popular">
+            <div class="popular-badge">الأكثر اختيارًا</div>
+            <div class="plan-name">الأعمال برو</div>
+            <div class="plan-price">
+              <span class="price">4,990</span>
+              <span class="currency">ريال</span>
+              <span class="period">/ سنة</span>
+            </div>
+            <div class="plan-savings">توفير 998 ريال</div>
+            <div class="plan-audience">مناسبة للشركات الناشئة والفرق</div>
+            <ul class="plan-features">
+              <li><i class="fas fa-check"></i> كل مزايا باقة الأعمال</li>
+              <li><i class="fas fa-check"></i> صلاحيات الفرق</li>
+              <li><i class="fas fa-check"></i> تحليلات موسعة</li>
+              <li><i class="fas fa-check"></i> دعم فني عبر الواتساب</li>
+              <li><i class="fas fa-check"></i> 2000 رسالة شهرية</li>
+              <li><i class="fas fa-check"></i> 5 مستخدمين</li>
+            </ul>
+            <a href="booking.html" class="btn btn-primary"
+              >احجز عرضًا توضيحيًا</a
+            >
+          </div>
+          <div class="pricing-card">
+            <div class="plan-name">الاحترافية</div>
+            <div class="plan-price">
+              <span class="price">6,990</span>
+              <span class="currency">ريال</span>
+              <span class="period">/ سنة</span>
+            </div>
+            <div class="plan-savings">توفير 1,398 ريال</div>
+            <div class="plan-audience">مناسبة للمؤسسات أو الوكلاء</div>
+            <ul class="plan-features">
+              <li><i class="fas fa-check"></i> كل المزايا السابقة</li>
+              <li><i class="fas fa-check"></i> وصول كامل للـ API</li>
+              <li><i class="fas fa-check"></i> تكاملات متقدمة</li>
+              <li><i class="fas fa-check"></i> مدير حساب مخصص</li>
+              <li><i class="fas fa-check"></i> 5000 رسالة شهرية</li>
+              <li><i class="fas fa-check"></i> 10 مستخدمين</li>
+            </ul>
+            <a href="booking.html" class="btn btn-outline"
+              >احجز عرضًا توضيحيًا</a
+            >
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- قسم مقارنة بين الباقات -->
+    <section class="pricing-features">
+      <div class="container">
+        <div class="section-header">
+          <h2>مقارنة بين الباقات</h2>
+          <p>قارن بين المميزات المتاحة في كل باقة لاختيار الأنسب لعملك</p>
+        </div>
+
+        <div class="features-comparison">
+          <style>
+            .features-comparison {
+              overflow-x: auto;
+              margin: 4rem 0;
+            }
+
+            .comparison-table {
+              width: 100%;
+              border-collapse: collapse;
+              text-align: center;
+              box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+              border-radius: 1.5rem;
+              overflow: hidden;
+            }
+
+            .comparison-table th,
+            .comparison-table td {
+              padding: 1.5rem 1rem;
+              border-bottom: 1px solid #eee;
+            }
+
+            .comparison-table th {
+              background-color: var(--primary-color);
+              color: white;
+              font-weight: 700;
+              font-size: 1.6rem;
+            }
+
+            .comparison-table th:first-child {
+              text-align: right;
+              background-color: transparent;
+              color: #333;
+              border-bottom: 1px solid #eee;
+              font-weight: 600;
+            }
+
+            .comparison-table tr:last-child td {
+              border-bottom: none;
+            }
+
+            .comparison-table tr:nth-child(odd) {
+              background-color: #f9f9f9;
+            }
+
+            .comparison-table tr td:first-child {
+              text-align: right;
+              font-weight: 500;
+              color: #444;
+              padding-right: 2rem;
+            }
+
+            .comparison-table i.fas.fa-check {
+              color: var(--secondary-color);
+              font-size: 1.8rem;
+            }
+
+            .comparison-table i.fas.fa-times {
+              color: #ddd;
+              font-size: 1.8rem;
+            }
+
+            .comparison-table .highlight {
+              background-color: rgba(27, 174, 112, 0.1);
+              font-weight: bold;
+            }
+
+            .comparison-table tr.section-title {
+              background-color: #f0f5ff;
+            }
+
+            .comparison-table tr.section-title td {
+              font-weight: 700;
+              color: var(--primary-color);
+              text-align: right;
+              padding: 1.2rem 2rem;
+            }
+
+            .popular-column {
+              background-color: rgba(16, 76, 186, 0.05);
+              position: relative;
+            }
+
+            .comparison-table .btn-outline {
+              padding: 0.8rem 1.5rem;
+              font-size: 1.4rem;
+            }
+
+            @media (max-width: 768px) {
+              .comparison-table th,
+              .comparison-table td {
+                padding: 1rem 0.5rem;
+                font-size: 1.4rem;
+              }
+            }
+          </style>
+
+          <table class="comparison-table">
+            <tr>
+              <th>الميزة</th>
+              <th>الأعمال</th>
+              <th class="popular-column">الأعمال برو</th>
+              <th>الاحترافية</th>
+            </tr>
+            <tr>
+              <td>السعر الشهري</td>
+              <td>299 ريال</td>
+              <td class="popular-column highlight">499 ريال</td>
+              <td>699 ريال</td>
+            </tr>
+            <tr>
+              <td>السعر السنوي</td>
+              <td>2,990 ريال</td>
+              <td class="popular-column highlight">4,990 ريال</td>
+              <td>6,990 ريال</td>
+            </tr>
+            <tr>
+              <td>عدد الرسائل الشهرية</td>
+              <td>500</td>
+              <td class="popular-column">2,000</td>
+              <td>5,000</td>
+            </tr>
+            <tr>
+              <td>عدد المستخدمين</td>
+              <td>1</td>
+              <td class="popular-column">5</td>
+              <td>10</td>
+            </tr>
+            <tr class="section-title">
+              <td colspan="4">مميزات التسويق والحملات</td>
+            </tr>
+            <tr>
+              <td>إرسال حملات واتساب معتمدة</td>
+              <td><i class="fas fa-check"></i></td>
+              <td class="popular-column"><i class="fas fa-check"></i></td>
+              <td><i class="fas fa-check"></i></td>
+            </tr>
+            <tr>
+              <td>إنشاء قوالب رسائل معتمدة</td>
+              <td><i class="fas fa-check"></i></td>
+              <td class="popular-column"><i class="fas fa-check"></i></td>
+              <td><i class="fas fa-check"></i></td>
+            </tr>
+            <tr>
+              <td>جدولة الحملات بتوقيت محدد</td>
+              <td><i class="fas fa-check"></i></td>
+              <td class="popular-column"><i class="fas fa-check"></i></td>
+              <td><i class="fas fa-check"></i></td>
+            </tr>
+            <tr>
+              <td>تقسيم العملاء حسب السلوك</td>
+              <td><i class="fas fa-times"></i></td>
+              <td class="popular-column"><i class="fas fa-check"></i></td>
+              <td><i class="fas fa-check"></i></td>
+            </tr>
+            <tr>
+              <td>تتبع فتح الرسائل والنقرات</td>
+              <td><i class="fas fa-check"></i></td>
+              <td class="popular-column"><i class="fas fa-check"></i></td>
+              <td><i class="fas fa-check"></i></td>
+            </tr>
+            <tr>
+              <td>تقارير أداء الحملات</td>
+              <td><i class="fas fa-times"></i></td>
+              <td class="popular-column"><i class="fas fa-check"></i></td>
+              <td><i class="fas fa-check"></i></td>
+            </tr>
+            <tr class="section-title">
+              <td colspan="4">الردود الآلية والروبوتات</td>
+            </tr>
+            <tr>
+              <td>روبوتات دردشة قابلة للتخصيص</td>
+              <td>أساسي</td>
+              <td class="popular-column">متقدم</td>
+              <td>متطور</td>
+            </tr>
+            <tr>
+              <td>ردود تلقائية للرسائل الواردة</td>
+              <td><i class="fas fa-check"></i></td>
+              <td class="popular-column"><i class="fas fa-check"></i></td>
+              <td><i class="fas fa-check"></i></td>
+            </tr>
+            <tr>
+              <td>تصنيف تلقائي للمحادثات</td>
+              <td><i class="fas fa-times"></i></td>
+              <td class="popular-column"><i class="fas fa-check"></i></td>
+              <td><i class="fas fa-check"></i></td>
+            </tr>
+            <tr>
+              <td>ردود سريعة للأسئلة المتكررة</td>
+              <td><i class="fas fa-check"></i></td>
+              <td class="popular-column"><i class="fas fa-check"></i></td>
+              <td><i class="fas fa-check"></i></td>
+            </tr>
+            <tr class="section-title">
+              <td colspan="4">إدارة المحادثات والفرق</td>
+            </tr>
+            <tr>
+              <td>واجهة موحدة لكل المحادثات</td>
+              <td><i class="fas fa-check"></i></td>
+              <td class="popular-column"><i class="fas fa-check"></i></td>
+              <td><i class="fas fa-check"></i></td>
+            </tr>
+            <tr>
+              <td>توزيع تلقائي للمحادثات</td>
+              <td><i class="fas fa-times"></i></td>
+              <td class="popular-column"><i class="fas fa-check"></i></td>
+              <td><i class="fas fa-check"></i></td>
+            </tr>
+            <tr>
+              <td>تعليقات داخلية للموظفين</td>
+              <td><i class="fas fa-times"></i></td>
+              <td class="popular-column"><i class="fas fa-check"></i></td>
+              <td><i class="fas fa-check"></i></td>
+            </tr>
+            <tr>
+              <td>ملاحظات وسجل تاريخي للعملاء</td>
+              <td><i class="fas fa-check"></i></td>
+              <td class="popular-column"><i class="fas fa-check"></i></td>
+              <td><i class="fas fa-check"></i></td>
+            </tr>
+            <tr class="section-title">
+              <td colspan="4">التكاملات والتطوير</td>
+            </tr>
+            <tr>
+              <td>تكامل مع المتاجر الإلكترونية</td>
+              <td>محدود</td>
+              <td class="popular-column">كامل</td>
+              <td>كامل</td>
+            </tr>
+            <tr>
+              <td>ربط مع أنظمة CRM</td>
+              <td><i class="fas fa-times"></i></td>
+              <td class="popular-column"><i class="fas fa-check"></i></td>
+              <td><i class="fas fa-check"></i></td>
+            </tr>
+            <tr>
+              <td>واجهة برمجة API للمطورين</td>
+              <td><i class="fas fa-times"></i></td>
+              <td class="popular-column">محدودة</td>
+              <td>كاملة</td>
+            </tr>
+            <tr>
+              <td>Webhooks لإشعارات الأحداث</td>
+              <td><i class="fas fa-times"></i></td>
+              <td class="popular-column"><i class="fas fa-check"></i></td>
+              <td><i class="fas fa-check"></i></td>
+            </tr>
+            <tr>
+              <td>تطبيق جوال للرد من أي مكان</td>
+              <td><i class="fas fa-check"></i></td>
+              <td class="popular-column"><i class="fas fa-check"></i></td>
+              <td><i class="fas fa-check"></i></td>
+            </tr>
+            <tr>
+              <td>الدعم الفني</td>
+              <td>البريد الإلكتروني</td>
+              <td class="popular-column">واتساب 12/5</td>
+              <td>مدير حساب مخصص</td>
+            </tr>
+            <tr>
+              <td></td>
+              <td>
+                <a href="booking.html" class="btn btn-outline"
+                  >احجز عرضاً توضيحياً</a
+                >
+              </td>
+              <td class="popular-column">
+                <a href="booking.html" class="btn btn-primary"
+                  >احجز عرضاً توضيحياً</a
+                >
+              </td>
+              <td>
+                <a href="booking.html" class="btn btn-outline"
+                  >احجز عرضاً توضيحياً</a
+                >
+              </td>
+            </tr>
+          </table>
+        </div>
+
+        <div class="enterprise-cta">
+          <h3>هل تحتاج إلى خطة مخصصة لمؤسستك؟</h3>
+          <p>
+            اتصل بنا للحصول على باقة مخصصة تناسب احتياجات عملك مع عدد أكبر من
+            الرسائل، المستخدمين، والمميزات المتقدمة.
+          </p>
+          <a href="booking.html" class="btn btn-primary"
+            >تواصل مع فريق المبيعات</a
+          >
+        </div>
+      </div>
+    </section>
+
+    <!-- قسم أسئلة متكررة عن الأسعار -->
+    <section class="faq">
+      <div class="container">
+        <div class="section-header">
+          <h2>أسئلة شائعة عن الأسعار والباقات</h2>
+        </div>
+        <div class="faq-container">
+          <div class="faq-item">
+            <div class="faq-question">
+              <h3>هل هناك رسوم إضافية للتفعيل؟</h3>
+              <div class="faq-icon">
+                <i class="fas fa-chevron-down"></i>
+              </div>
+            </div>
+            <div class="faq-answer">
+              <p>
+                لا، لا توجد رسوم تفعيل إضافية. كل ما تدفعه هو قيمة الاشتراك
+                المذكورة في الباقات.
+              </p>
+            </div>
+          </div>
+          <div class="faq-item">
+            <div class="faq-question">
+              <h3>هل يمكنني ترقية أو تخفيض باقتي لاحقًا؟</h3>
+              <div class="faq-icon">
+                <i class="fas fa-chevron-down"></i>
+              </div>
+            </div>
+            <div class="faq-answer">
+              <p>
+                نعم، يمكنك ترقية باقتك في أي وقت. للتخفيض، يمكنك الانتقال إلى
+                باقة أقل في نهاية دورة الاشتراك الحالية.
+              </p>
+            </div>
+          </div>
+          <div class="faq-item">
+            <div class="faq-question">
+              <h3>ماذا يحدث إذا تجاوزت حد الرسائل الشهري؟</h3>
+              <div class="faq-icon">
+                <i class="fas fa-chevron-down"></i>
+              </div>
+            </div>
+            <div class="faq-answer">
+              <p>
+                تُحتسب الرسائل الإضافية بنظام الدفع حسب الاستخدام بقيمة 0.10
+                ريال للرسالة العادية و 0.30 ريال للرسائل التي تحتوي على وسائط.
+              </p>
+            </div>
+          </div>
+          <div class="faq-item">
+            <div class="faq-question">
+              <h3>هل تقدمون خصومات للمؤسسات غير الربحية؟</h3>
+              <div class="faq-icon">
+                <i class="fas fa-chevron-down"></i>
+              </div>
+            </div>
+            <div class="faq-answer">
+              <p>
+                نعم، نقدم خصومات خاصة للمؤسسات التعليمية وغير الربحية. يرجى
+                التواصل مع فريق المبيعات لمعرفة التفاصيل.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- الفوتر -->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-logo">
+            <h2>Widers</h2>
+            <p>منصتك لإدارة محادثات WhatsApp</p>
+          </div>
+          <div class="footer-links">
+            <a href="index.html#features">المميزات</a>
+            <a href="index.html#advanced-features">المميزات المتقدمة</a>
+            <a href="index.html#journey">كيف تبدأ</a>
+            <a href="index.html#testimonials">عملاؤنا</a>
+            <a href="index.html#pricing">الأسعار</a>
+            <a href="index.html#faq">الأسئلة الشائعة</a>
+          </div>
+          <div class="social-links">
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-facebook"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-linkedin"></i></a>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>© 2023 Widers. جميع الحقوق محفوظة</p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
